@@ -1,18 +1,18 @@
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 export const ToastSuccessMessage = (msg: string) => {
-  toast.success(msg);
-};
+  toast.success(msg)
+}
 export const ToastDefaultMessage = (msg: string) => {
-  toast(msg);
-};
+  toast(msg)
+}
 export const ToastInfoMessage = (msg: string) => {
-  toast.info(msg);
-};
-export const ToastDangerMessage = (msg: string) => {
-  toast.error(msg);
-};
+  toast.info(msg)
+}
+export const ToastErrorMessage = (msg: string) => {
+  toast.error(msg)
+}
 export const ToastWarnMessage = (msg: string) => {
-  toast.warn(msg);
-};
+  toast.warn(msg)
+}
