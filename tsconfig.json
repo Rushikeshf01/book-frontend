@@ -13,7 +13,18 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      //Setting here also needs to set the path, otherwise ts will not recognize the path and will report an error even if you set the shortcut path in vite
+      "@pages/*": ["pages/*"],
+      "@components/*": ["components/*"],
+      "@store/*": ["store/*"],
+      "@const/*": ["constant/*"],
+      "@utils/*": ["utils/*"],
+      "@types/*": ["types/*"],
+      "@assets/*": ["assets/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
